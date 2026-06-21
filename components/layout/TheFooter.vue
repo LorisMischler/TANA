@@ -42,6 +42,7 @@
     </div>
     <div class="footer-bottom container">
       <p>© 2026 TANA – Projet pédagogique ESEIS Strasbourg · Président : Arnaud HAILLANT</p>
+      <NuxtLink to="/mentions-legales" class="legal-link">Mentions légales & confidentialité</NuxtLink>
     </div>
   </footer>
 </template>
@@ -60,6 +61,9 @@
 .footer-col a { color:rgba(255,255,255,.55); text-decoration:none; font-size:13.5px; transition:color .15s; }
 .footer-col a:hover { color:var(--accent-light); }
 .footer-bottom { padding-top:24px; font-size:12.5px; color:rgba(255,255,255,.3); }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.legal-link { color:rgba(255,255,255,.4); text-decoration:none; font-size:12.5px; }
+.legal-link:hover { color:var(--accent-light); }
 @media (max-width:768px) { .footer-grid { grid-template-columns:1fr 1fr; } }
 @media (max-width:480px) { .footer-grid { grid-template-columns:1fr; } }
 </style>
