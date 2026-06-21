@@ -40,14 +40,6 @@ const etapes = [
 
     <section class="section-pad" style="background:var(--bg)">
       <div class="container">
-        <div class="fade-in intro-text">
-          <p>
-            La création de bijoux est bien plus qu'une activité manuelle. Elle permet de reprendre
-            confiance, de retrouver de la concentration et de la fierté à travers un objet que l'on a
-            fabriqué soi-même. Dans un cadre bienveillant et sans jugement, chaque participant avance à
-            son rythme, accompagné par notre équipe. On y parle, on y rit, on y crée ensemble.
-          </p>
-        </div>
 
         <div class="affiches fade-in">
           <h2 class="font-display affiches-title">Nos prochains rendez-vous</h2>
@@ -59,6 +51,15 @@ const etapes = [
               <NuxtImg src="/ateliers/affiche-vente-bijoux.jpg" alt="Affiche de la vente de bijoux du 27 juin 2026" loading="lazy" />
             </a>
           </div>
+        </div>
+
+        <div class="fade-in intro-text">
+          <p>
+            La création de bijoux est bien plus qu'une activité manuelle. Elle permet de reprendre
+            confiance, de retrouver de la concentration et de la fierté à travers un objet que l'on a
+            fabriqué soi-même. Dans un cadre bienveillant et sans jugement, chaque participant avance à
+            son rythme, accompagné par notre équipe. On y parle, on y rit, on y crée ensemble.
+          </p>
         </div>
 
         <div class="gallery fade-in">
@@ -100,6 +101,12 @@ const etapes = [
 .page-desc  { font-size:17px; color:var(--text-sec); max-width:640px; line-height:1.8; }
 .intro-text { max-width:720px; margin-bottom:48px; }
 .intro-text p { font-size:16px; color:var(--text-sec); line-height:1.9; }
+.affiches { margin-bottom:48px; }
+.affiches-title { font-size:clamp(22px,3vw,32px); color:var(--dark); text-align:center; margin-bottom:24px; }
+.affiches-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px; align-items:start; justify-items:center; }
+.affiche { display:block; max-width:480px; width:100%; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); box-shadow:var(--shadow); transition:transform .2s, box-shadow .2s; }
+.affiche:hover { transform:translateY(-3px); box-shadow:var(--shadow-md); }
+.affiche img { width:100%; height:auto; display:block; }
 .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-bottom:64px; }
 .gallery-item { margin:0; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); box-shadow:var(--shadow); aspect-ratio:4/3; }
 .gallery-item img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .3s; }
