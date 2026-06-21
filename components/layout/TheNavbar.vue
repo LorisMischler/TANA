@@ -5,7 +5,7 @@ const navLinks = [
   { label: 'Nos actions',   href: '/#actions' },
   { label: 'Actualités',    href: '/actualites' },
   { label: 'Ressources',    href: '/ressources' },
-  { label: 'Bénévoles',     href: '/benevoles' },
+  { label: 'Équipe',        href: '/equipe' },
   { label: 'Contact',       href: '/contact' },
 ]
 </script>
@@ -14,7 +14,7 @@ const navLinks = [
   <nav class="navbar">
     <NuxtLink to="/" class="nav-logo">
       <!-- Remplacer par : <img src="/logo.jpg" width="52" height="52" alt="TANA" style="object-fit:contain;" /> -->
-      <img src="/logo.jpg" width="100" height="100" alt="TANA" style="object-fit:contain;" />
+      <img src="/logo.jpg" alt="TANA" class="logo-img" />
       <div class="logo-text">
         <strong>TANA</strong>
         <span>Tous Avec Nos Ados</span>
@@ -38,8 +38,9 @@ const navLinks = [
 </template>
 
 <style scoped>
-.navbar { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; display:flex; align-items:center; justify-content:space-between; height:72px; }
+.navbar { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.95); backdrop-filter:blur(12px); border-bottom:1px solid var(--border); padding:0 2rem; display:flex; align-items:center; justify-content:space-between; height:120px; }
 .nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--dark); }
+.logo-img { height:120px; width:auto; object-fit:contain; }
 .logo-placeholder { width:52px; height:52px; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:16px; }
 .logo-text strong { display:block; font-size:15px; font-weight:700; color:var(--primary); letter-spacing:.04em; }
 .logo-text span   { display:block; font-size:11px; color:var(--muted); }

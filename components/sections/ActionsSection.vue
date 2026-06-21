@@ -6,23 +6,32 @@
         <h2 class="section-title font-display">Ce que nous faisons<br>concrètement</h2>
       </div>
       <div class="actions-grid fade-in">
-        <div v-for="action in actions" :key="action.titre" class="action-card">
+        <component
+          :is="action.lien ? NuxtLink : 'div'"
+          v-for="action in actions"
+          :key="action.titre"
+          :to="action.lien"
+          class="action-card"
+          :class="{ clickable: action.lien }"
+        >
           <div class="action-icon" :style="{ background: action.bg, color: action.color }">{{ action.icon }}</div>
           <h3>{{ action.titre }}</h3>
           <p>{{ action.desc }}</p>
-        </div>
+          <span v-if="action.lien" class="card-arrow">En savoir plus →</span>
+        </component>
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+const NuxtLink = resolveComponent('NuxtLink')
 const actions = [
+  { icon:'🎨', bg:'#FDE8DF', color:'#E8450A', titre:'Ateliers créatifs', desc:"Création de bijoux et activités d'expression comme outils de reconstruction et d'épanouissement.", lien:'/ateliers-creatifs' },
   { icon:'🗣️', bg:'#EEEEFF', color:'#3730C4', titre:'Temps de parole',  desc:"Des espaces d'échange bienveillants où les jeunes peuvent s'exprimer librement, sans jugement." },
-  { icon:'🎨', bg:'#FDE8DF', color:'#E8450A', titre:'Ateliers créatifs', desc:"Art et expression comme outils de reconstruction et d'épanouissement personnel." },
   { icon:'🍳', bg:'#FEF3C7', color:'#B45309', titre:'Ateliers cuisine',  desc:"Apprendre ensemble, créer du lien et retrouver des repères à travers la cuisine collective." },
   { icon:'🩺', bg:'#EEEEFF', color:'#3730C4', titre:'Soutien médical',   desc:"Accès à des médecins, psychologues et accompagnement de santé." },
-  { icon:'🏠', bg:'#F0F4F8', color:'#334155', titre:'Hébergement',       desc:"Orientation vers des solutions d'hébergement d'urgence ou temporaire." },
+  { icon:'🏠', bg:'#F0F4F8', color:'#334155', titre:"Aide à l'hébergement", desc:"Orientation vers des solutions d'hébergement d'urgence ou temporaire." },
   { icon:'📚', bg:'#FDE8DF', color:'#E8450A', titre:'Formations',        desc:"Formations pour les professionnels (éducateurs, enseignants, soignants)." },
   { icon:'📢', bg:'#EEEEFF', color:'#3730C4', titre:'Sensibilisation',   desc:"Interventions en milieu scolaire pour informer sur les risques de l'exploitation." },
   { icon:'💪', bg:'#FDE8DF', color:'#E8450A', titre:'Estime de soi',     desc:"Ateliers dédiés à la confiance en soi et à l'affirmation de soi." },
@@ -39,4 +48,6 @@ const actions = [
 .action-icon { width:52px; height:52px; border-radius:14px; display:flex; align-items:center; justify-content:center; font-size:26px; margin-bottom:16px; }
 h3 { font-size:16px; font-weight:700; color:var(--dark); margin-bottom:8px; }
 p  { font-size:13.5px; color:var(--text-sec); line-height:1.6; }
+.action-card.clickable { cursor:pointer; text-decoration:none; display:block; }
+.card-arrow { display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:var(--accent); }
 </style>

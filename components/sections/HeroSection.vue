@@ -5,14 +5,14 @@
       <div class="hero-tag">Association loi 1901 · Strasbourg</div>
       <h1>Prévenir, écouter,<br><em>protéger</em> les jeunes.</h1>
       <p class="hero-slogan">Prévention, formation, accompagnement, sensibilisation<br>et réinsertion des mineurs en situation de prostitution.</p>
-      <p class="hero-desc">TANA accompagne les adolescents confrontés aux violences et à l'exploitation sexuelle. Nous agissons ensemble pour chaque jeune en difficulté.</p>
+      <p class="hero-desc">TANA est une association à but non lucratif et un accueil de jour qui accompagne les adolescents confrontés aux violences et à l'exploitation sexuelle. Nous agissons ensemble pour chaque jeune en difficulté.</p>e
       <div class="hero-actions">
         <NuxtLink to="#qui-sommes-nous" class="btn btn-accent">Découvrir l'association</NuxtLink>
         <NuxtLink to="/aide-urgence" class="btn btn-ghost">Aide d'urgence</NuxtLink>
       </div>
     </div>
     <div class="hero-stats">
-      <div class="hero-stat"><strong>9</strong><span>Éducateurs fondateurs</span></div>
+      <div class="hero-stat"><strong>8</strong><span>Éducateurs fondateurs</span></div>
       <div class="hero-stat"><strong>8</strong><span>Types d'actions</span></div>
       <div class="hero-stat"><strong>0€</strong><span>Pour les jeunes</span></div>
     </div>

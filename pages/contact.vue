@@ -17,9 +17,11 @@ function send() { alert('Message envoyé ! Merci.') }
       <div class="contact-grid">
         <div class="contact-info fade-in">
           <div class="contact-item"><div class="ci-icon">✉️</div><div><h4>Email</h4><p><a href="mailto:contact@tana-asso.fr">contact@tana-asso.fr</a></p></div></div>
-          <div class="contact-item"><div class="ci-icon">📞</div><div><h4>Téléphone</h4><p>À compléter</p></div></div>
+          <div class="contact-item"><div class="ci-icon">📞</div><div><h4>Téléphone</h4><p><a href="tel:+33353014242">03 53 01 42 42</a></p></div></div>
           <div class="contact-item"><div class="ci-icon">📍</div><div><h4>Adresse</h4><p>Strasbourg, Alsace</p></div></div>
-          <div class="contact-item"><div class="ci-icon">📸</div><div><h4>Instagram</h4><p><a href="#">@tana_asso</a></p></div></div>
+          <div class="contact-item"><div class="ci-icon">📸</div><div><h4>Instagram</h4><p><a href="https://www.instagram.com/tana_asso67?igsh=aWM3MG5meXlhMnhr&utm_source=qr" target="_blank" rel="noopener">TANA</a></p></div></div>
+          <div class="contact-item"><div class="ci-icon">📘</div><div><h4>Facebook</h4><p><a href="https://www.facebook.com/profile.php?id=61590554433548&mibextid=wwXIfr&rdid=2pMeoj7zou5GiSYx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1bEX4FyNC3%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener">TANA</a></p></div></div>
+          <div class="contact-item"><div class="ci-icon">💼</div><div><h4>LinkedIn</h4><p><a href="https://www.linkedin.com/in/tana-tous-avec-nos-ados-a38435418/" target="_blank" rel="noopener">TANA</a></p></div></div>
           <div class="alert-urgence">
             <p class="alert-title">🚨 Vous êtes en danger ?</p>
             <p>Appelez immédiatement le <strong>119</strong> ou le <strong>15</strong>. Gratuit, 24h/24.</p>

@@ -6,13 +6,16 @@
         <p>Tous Avec Nos Ados — Prévention, formation, accompagnement, sensibilisation et réinsertion des mineurs en situation de prostitution.</p>
         <div class="socials">
           <a href="mailto:contact@tana-asso.fr" class="social-link" title="Email">✉</a>
-          <a href="#" class="social-link" title="Instagram">📸</a>
+          <a href="https://www.instagram.com/tana_asso67?igsh=aWM3MG5meXlhMnhr&utm_source=qr" class="social-link" title="Instagram" target="_blank" rel="noopener">📸</a>
+          <a href="https://www.facebook.com/profile.php?id=61590554433548&mibextid=wwXIfr&rdid=2pMeoj7zou5GiSYx&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1bEX4FyNC3%2F%3Fmibextid%3DwwXIfr#" class="social-link" title="Facebook" target="_blank" rel="noopener">📘</a>
+          <a href="https://www.linkedin.com/in/tana-tous-avec-nos-ados-a38435418/" class="social-link" title="LinkedIn" target="_blank" rel="noopener">💼</a>
         </div>
       </div>
       <div class="footer-col">
         <h4>L'association</h4>
         <ul>
           <li><NuxtLink to="/#qui-sommes-nous">Qui sommes-nous ?</NuxtLink></li>
+          <li><NuxtLink to="/equipe">Notre équipe</NuxtLink></li>
           <li><NuxtLink to="/#objectifs">Nos objectifs</NuxtLink></li>
           <li><NuxtLink to="/#actions">Nos actions</NuxtLink></li>
           <li><NuxtLink to="/actualites">Actualités</NuxtLink></li>
@@ -23,7 +26,7 @@
         <h4>Agir</h4>
         <ul>
           <li><NuxtLink to="/#don">Faire un don</NuxtLink></li>
-          <li><NuxtLink to="/benevoles">Devenir bénévole</NuxtLink></li>
+          
           <li><NuxtLink to="/contact">Nous contacter</NuxtLink></li>
         </ul>
       </div>
@@ -38,7 +41,7 @@
       </div>
     </div>
     <div class="footer-bottom container">
-      <p>© 2025 TANA – Projet pédagogique ESEIS Strasbourg · Président : Arnaud HAILLANT</p>
+      <p>© 2026 TANA – Projet pédagogique ESEIS Strasbourg · Président : Arnaud HAILLANT</p>
     </div>
   </footer>
 </template>
