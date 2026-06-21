@@ -49,6 +49,18 @@ const etapes = [
           </p>
         </div>
 
+        <div class="affiches fade-in">
+          <h2 class="font-display affiches-title">Nos prochains rendez-vous</h2>
+          <div class="affiches-grid">
+            <a href="/ateliers/affiche-atelier-bijoux.jpg" target="_blank" rel="noopener" class="affiche">
+              <NuxtImg src="/ateliers/affiche-atelier-bijoux.jpg" alt="Affiche de l'atelier création de bijoux du 25 mai 2026" loading="lazy" />
+            </a>
+            <a href="/ateliers/affiche-vente-bijoux.jpg" target="_blank" rel="noopener" class="affiche">
+              <NuxtImg src="/ateliers/affiche-vente-bijoux.jpg" alt="Affiche de la vente de bijoux du 27 juin 2026" loading="lazy" />
+            </a>
+          </div>
+        </div>
+
         <div class="gallery fade-in">
           <figure v-for="photo in photos" :key="photo.src" class="gallery-item">
             <NuxtImg :src="photo.src" :alt="photo.alt" loading="lazy" />
@@ -103,5 +115,6 @@ const etapes = [
 .vente-text p  { font-size:16px; color:rgba(255,255,255,.8); line-height:1.8; margin-bottom:24px; }
 .vente-text .btn { background:#fff; color:var(--primary); }
 .vente-text .btn:hover { background:var(--primary-pale); }
+
 @media (max-width:768px) { .vente { padding:32px 24px; } }
 </style>
